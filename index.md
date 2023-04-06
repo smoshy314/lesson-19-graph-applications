@@ -3,11 +3,12 @@
 **CISC320 Spring 2023 Lesson 14 - Graph Applications**
 
 Group Members:
-* ___
-* ___
-* ___
+* First member (email)
+* Second member (email)
+* Third member (email)
+* Fourth member (email)
 
-Our project is on ___
+Description of project
 
 ## Installation Code
 
@@ -38,6 +39,14 @@ import networkx as nx
 ```
 
 **Visualization: **
+
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
 
 ![Image goes here](Link goes here)
 
