@@ -36,7 +36,7 @@ jobs:
           source: ./
           destination: ./_site
       - run: |
-          sudo chmod 777 -R ./_site/
+          sudo chmod +w -R ./_site/
           sudo echo "<html><head><meta http-equiv='refresh' content='0; URL=${{github.server_url}}/${{github.repository}}' /></head><body>Redirecting to repository</body></html>" > ./_site/github.html
       - name: GitInspector
         run: |
@@ -44,7 +44,7 @@ jobs:
           # git clone ${{github.server_url}}/${{github.repository}} original-src/
           # -f ipynb,html,md,txt,json,xml,png,graphviz,css,tsx,ts
           # python ./gitinspector/gitinspector.py ./original-src/ --grading -x ./gitinspector -x ./_site > ./_site/git_report.html
-          python ./gitinspector/gitinspector.py ./ --grading -x ./gitinspector > ./_site/git_report.html
+          python ./gitinspector/gitinspector.py ./ -f ** --grading -x ./gitinspector > ./_site/git_report.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
