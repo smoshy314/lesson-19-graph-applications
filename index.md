@@ -33,12 +33,12 @@ import networkx as nx
 **Graph Problem/Algorithm**: [DFS/BFS/SSSP/APSP/MST]
 
 
-**Setup code: **
+**Setup code**:
 
 ```python
 ```
 
-**Visualization: **
+**Visualization**:
 
 ![Image goes here](Relative image filename goes here)
 
