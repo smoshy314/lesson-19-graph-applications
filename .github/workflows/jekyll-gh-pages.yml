@@ -36,7 +36,7 @@ jobs:
           source: ./
           destination: ./_site
       - run: |
-          sudo chmod +w ./_site/
+          sudo chmod +w -r ./_site/
           sudo echo "<html><head><meta http-equiv='refresh' content='0; URL=${{github.server_url}}/${{github.repository}}' /></head><body>Redirecting to repository</body></html>" > ./_site/github.html
       - name: GitInspector
         run: |
