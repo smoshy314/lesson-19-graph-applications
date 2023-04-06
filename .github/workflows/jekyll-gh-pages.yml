@@ -35,8 +35,10 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - run: |
-          sudo chmod +w -R ./_site/
+      - name: Provide easy redirect to repo
+        run: |
+          # Figure out narrower permissions than 777 at some point; +w isn't working on its own...
+          sudo chmod 777 -R ./_site/
           sudo echo "<html><head><meta http-equiv='refresh' content='0; URL=${{github.server_url}}/${{github.repository}}' /></head><body>Redirecting to repository</body></html>" > ./_site/github.html
       - name: GitInspector
         run: |
