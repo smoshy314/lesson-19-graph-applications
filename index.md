@@ -40,15 +40,7 @@ import networkx as nx
 
 **Visualization: **
 
-```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
-```
-
-![Image goes here](Link goes here)
+![Image goes here](Relative image filename goes here)
 
 **Solution code:**
 
