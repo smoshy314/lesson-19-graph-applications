@@ -35,6 +35,14 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - run: echo "<html><head><meta http-equiv='refresh' content='0; URL=${{github.server_url}}/${{github.repository}}' /></head><body>Redirecting to repository</body></html>" > ./_site/github.html
+      - name: GitInspector
+        run: |
+          git clone https://github.com/jpwhite3/gitinspector.git
+          # git clone ${{github.server_url}}/${{github.repository}} original-src/
+          # -f ipynb,html,md,txt,json,xml,png,graphviz,css,tsx,ts
+          # python ./gitinspector/gitinspector.py ./original-src/ --grading -x ./gitinspector -x ./_site > ./_site/git_report.html
+          python ./gitinspector/gitinspector.py ./ --grading -x ./gitinspector > ./_site/git_report.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
