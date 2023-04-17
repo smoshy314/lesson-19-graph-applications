@@ -26,18 +26,19 @@ import networkx as nx
 # First Problem Title
 
 **Informal Description**:
-As the head of transportation at the University of Delaware, you have been tasked with installing
-charging stations for the new electric bus system. Given a map of the UD electrical grid, where each
-node represents a building's substation and each edge represents a transmission line, determine if the new charging
-stations for the electric buses will draw power from every university building by performing a
-depth first search.
+As the newest volunteer for University of Delaware's electric bus program, you are
+given a graph representing the order of bus stops you must make depending
+on which charging station you start from, where each node represents a stop (including
+charging stations) and the edges represent the order in which you must make the stops
+which the edge connects. By applying a depth first search, create a topological sort
+of the graph to determine the sequence of stops you must make from every possible charging station.
 
 > **Formal Description**:
 >
 > - Input:
 > - Output:
 
-**Graph Problem/Algorithm**: [DFS/BFS/SSSP/APSP/MST]
+**Graph Problem/Algorithm**: DFS
 
 **Setup code**:
 
