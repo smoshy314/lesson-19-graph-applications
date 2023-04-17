@@ -3,10 +3,11 @@
 **CISC320 Spring 2023 Lesson 14 - Graph Applications**
 
 Group Members:
-* First member (email)
-* Second member (email)
-* Third member (email)
-* Fourth member (email)
+
+- First member (email)
+- Second member (email)
+- Third member (email)
+- Fourth member (email)
 
 Description of project
 
@@ -24,18 +25,24 @@ import networkx as nx
 
 # First Problem Title
 
-**Informal Description**: 
+**Informal Description**:
+As the head of transportation at the University of Delaware, you have been tasked with installing
+charging stations for the new electric bus system. Given a map of the UD electrical grid, where each
+node represents a building's substation and each edge represents a transmission line, determine if the new charging
+stations for the electric buses will draw power from every university building by performing a
+depth first search.
 
 > **Formal Description**:
->  * Input:
->  * Output:
+>
+> - Input:
+> - Output:
 
 **Graph Problem/Algorithm**: [DFS/BFS/SSSP/APSP/MST]
-
 
 **Setup code**:
 
 ```python
+
 ```
 
 **Visualization**:
@@ -45,12 +52,13 @@ import networkx as nx
 **Solution code:**
 
 ```python
+
 ```
 
 **Output**
 
 ```
+
 ```
 
 **Interpretation of Results**:
-
