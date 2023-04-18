@@ -1,0 +1,18 @@
+Charger_A Charger_B Charger_C Charger_M Charger_N
+Charger_M Charger_C Charger_F Charger_Z
+Charger_B Charger_D
+Charger_Z Charger_D
+Charger_D Charger_C
+Charger_I Charger_A Charger_G
+Charger_G Charger_F Charger_V Charger_Y
+Charger_Y Charger_E Charger_H Charger_J
+Charger_F Charger_Z Charger_N
+Charger_K Charger_G
+Charger_X Charger_Y Charger_L
+Charger_O Charger_L
+Charger_V Charger_P Charger_Q
+Charger_Q Charger_R Charger_U
+Charger_R Charger_N Charger_S
+Charger_E Charger_T Charger_R
+Charger_T Charger_W Charger_S
+Charger_J Charger_N Charger_S Charger_W
