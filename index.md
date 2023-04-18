@@ -26,12 +26,14 @@ import networkx as nx
 # First Problem Title
 
 **Informal Description**:
-As the newest volunteer for University of Delaware's electric bus program, you are
-given a graph representing the order of bus stops you must make depending
-on which charging station you start from, where each node represents a stop (including
-charging stations) and the edges represent the order in which you must make the stops
-which the edge connects. By applying a depth first search, create a topological sort
-of the graph to determine the sequence of stops you must make from every possible charging station.
+As the head of transportation for the University of Delaware, you have been
+tasked with installing several charging stations for UD's new electric bus
+program, which will provide a clean and efficient transportation system for
+students. However, due to certain power dependencies, the charging stations
+must be installed in a certain order to ensure all are functioning on the
+same grid. Determine a correct order of installation by performing a
+topological sort (through implementing a DFS) on the directed, acyclic graph
+of power stations.
 
 > **Formal Description**:
 >
