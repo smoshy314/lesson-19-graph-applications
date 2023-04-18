@@ -52,7 +52,7 @@ dfs_graph = nx.read_adjlist("dfs_adjacency_list.txt", create_using=nx.DiGraph)
 
 **Visualization**:
 
-![Image goes here](Relative image filename goes here)
+![Image goes here](dfs_graph.png)
 
 **Solution code:**
 
