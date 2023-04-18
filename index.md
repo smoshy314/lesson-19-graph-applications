@@ -45,7 +45,9 @@ of power stations.
 **Setup code**:
 
 ```python
+import networkx as nx
 
+dfs_graph = nx.read_adjlist("dfs_adjacency_list.txt", create_using=nx.DiGraph)
 ```
 
 **Visualization**:
@@ -55,13 +57,14 @@ of power stations.
 **Solution code:**
 
 ```python
-
+topologically_sorted_nodes = [*nx.topological_sort(dfs_graph)]
+print(topologically_sorted_nodes)
 ```
 
 **Output**
 
 ```
-
+['I', 'K', 'X', 'O', 'A', 'G', 'L', 'B', 'M', 'V', 'Y', 'F', 'P', 'Q', 'E', 'H', 'J', 'Z', 'U', 'T', 'R', 'D', 'W', 'N', 'S', 'C']
 ```
 
 **Interpretation of Results**:
