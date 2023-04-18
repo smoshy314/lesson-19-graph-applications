@@ -37,8 +37,8 @@ of power stations.
 
 > **Formal Description**:
 >
-> - Input:
-> - Output:
+> - Input: A directed, acyclic graph G(E,V), where E is the set of edges, and V is the set of vertices.
+> - Output: A list of the vertices in V sorted in topological order.
 
 **Graph Problem/Algorithm**: DFS
 
@@ -64,7 +64,10 @@ print(topologically_sorted_nodes)
 **Output**
 
 ```
-['I', 'K', 'X', 'O', 'A', 'G', 'L', 'B', 'M', 'V', 'Y', 'F', 'P', 'Q', 'E', 'H', 'J', 'Z', 'U', 'T', 'R', 'D', 'W', 'N', 'S', 'C']
+['Charger_I', 'Charger_K', 'Charger_X', 'Charger_O', 'Charger_A', 'Charger_G', 'Charger_L', 'Charger_B', 'Charger_M', 'Charger_V', 'Charger_Y', 'Charger_F', 'Charger_P', 'Charger_Q', 'Charger_E', 'Charger_H', 'Charger_J', 'Charger_Z', 'Charger_U', 'Charger_T', 'Charger_R', 'Charger_D', 'Charger_W', 'Charger_N', 'Charger_S', 'Charger_C']
 ```
 
 **Interpretation of Results**:
+The results demonstrate the order in which the charging stations must be installed before installing others. For instance,
+to install Charger_C, all other chargers must be installed first in their respective order in the list. Since Charger_G comes
+after Charger_A, then Charger_A must be installed first, and so on.
