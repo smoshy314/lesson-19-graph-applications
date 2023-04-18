@@ -1,0 +1,18 @@
+A B C M N
+M C F Z
+B D
+Z D
+D C
+I A G
+G F V Y
+Y E H J
+F Z N
+K G
+X Y L
+O L
+V P Q
+Q R U
+R N S
+E T R
+T W S
+J N S W
