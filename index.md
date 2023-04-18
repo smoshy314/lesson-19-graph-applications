@@ -29,9 +29,9 @@ import networkx as nx
 As the head of transportation for the University of Delaware, you have been
 tasked with installing several charging stations for UD's new electric bus
 program, which will provide a clean and efficient transportation system for
-students. However, due to certain power dependencies, the charging stations
-must be installed in a certain order to ensure all are functioning on the
-same grid. Determine a correct order of installation by performing a
+students. However, certain charging stations require that others
+be installed before them, so that they may be dolly-chained on the same
+power line. Determine a correct order of installation by performing a
 topological sort (through implementing a DFS) on the directed, acyclic graph
 of power stations.
 
