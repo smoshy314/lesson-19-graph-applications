@@ -4,7 +4,7 @@
 
 Group Members:
 
-- First member (email)
+- Michael Bocelli (mbocelli@udel.edu)
 - Second member (email)
 - Third member (email)
 - Fourth member (email)
