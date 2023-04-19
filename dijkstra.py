@@ -1,6 +1,16 @@
 import matplotlib.pyplot as plot
 import networkx as nx
 
+
+def solve_dijkstra(G: nx.DiGraph, source, target):
+    try:
+        path = nx.dijkstra_path(G, source, target)
+    except nx.exception.NetworkXNoPath:
+        return print(f'No path from {source} to {target}')
+    else:
+        print(path)
+
+
 G = nx.Graph()  # new graph
 
 # academic buildings
@@ -75,3 +85,6 @@ nx.draw_networkx_edge_labels(G, pos, edge_labels)
 
 # show graph
 plot.show()
+
+# to show dijkstra, close out of plot window first
+solve_dijkstra(G, 'Hartshorn', 'Ewing')
