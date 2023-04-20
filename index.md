@@ -8,7 +8,6 @@ Group Members:
 - Joshua Martinez (zenitram@udel.edu)
 - Evan Lewis (lewisev@udel.edu)
 - Victor Tung (vtung@udel.edu)
-- Fourth member (email)
 
 Description of project
 
