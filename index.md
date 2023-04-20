@@ -127,7 +127,7 @@ As a new student at the University of Delaware, you are completely clueless as t
 > **Formal Description**:
 >
 > - Input: An undirected graph G(E,V), where E is the set of edges, and V is the set of vertices.
-> - Output: A list of sets of vertices V, which represent the levels of the bfs tree from a given root node.
+> - Output: A list of sets of vertices V, which represent the nodes at each level of the bfs tree from a given root node.
 
 **Graph Problem/Algorithm**: BFS
 
