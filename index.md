@@ -30,10 +30,11 @@ As the head of transportation for the University of Delaware, you have been
 tasked with installing several charging stations for UD's new electric bus
 program, which will provide a clean and efficient transportation system for
 students. However, certain charging stations require that others
-be installed before them, so that they may be dolly-chained on the same
+be installed before them, so that they may be daisy-chained on the same
 power line. Determine a correct order of installation by performing a
-topological sort (through implementing a DFS) on the directed, acyclic graph
-of power stations.
+topological sort (through implementing a DFS) on the given, directed, acyclic graph
+of installation tasks, where each edge represents a dependency between two nodes,
+which represent the charging stations that need to be installed.
 
 > **Formal Description**:
 >
