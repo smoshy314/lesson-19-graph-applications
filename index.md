@@ -7,7 +7,7 @@ Group Members:
 - Michael Bocelli (mbocelli@udel.edu)
 - Joshua Martinez (zenitram@udel.edu)
 - Evan Lewis (lewisev@udel.edu)
-- Fourth member (email)
+- Victor Tung (vtung@udel.edu)
 
 Description of project
 
@@ -226,3 +226,44 @@ def solve_dijkstra(G: nx.DiGraph, source, target):
 
 **Interpretation of Results**:
 The results show that the connection starting at Hartshorn Hall must take a path through various buildings to get to Ewing Hall. To show students a good way to get to class, we would then have them follow along The Green to connect to Gore and passing by the other buildings until they arrive at Ewing Hall. This result contains the shortest path that works as a guide for students of the University of Delaware.
+
+# Visiting all dorms on south campus
+
+**Informal Description**:
+As a new student at the University of Delaware, you are completely clueless as to where the dorms are. All you know is the name of your dorm, a picture of your friend's dorm, and that you are on south campus. Unfortunately, your phone died right as your friend invited you to a party. Luckily, you have a map of all the dorms on south campus. Therefore, you have decided to visit each dorm to find your friend. Since you have a terrible memory and sense of direction, however, you make sure to only visit all the dorms and areas immediately accessible before moving on to the next.
+
+> **Formal Description**:
+>
+> - Input: An undirected graph G(E,V), where E is the set of edges, and V is the set of vertices.
+> - Output: A list of sets of vertices V, which represent the nodes at each level of the bfs tree from a given root node.
+
+**Graph Problem/Algorithm**: BFS
+
+**Setup code**:
+
+```python
+import networkx as nx
+import matplotlib.pyplot as plt
+
+G = nx.read_adjlist("bfs_adjlist.txt")
+```
+
+**Visualization**:
+
+![Image goes here](bfs_graph.png)
+
+**Solution code:**
+
+```python
+result = [*nx.bfs_layers(G, "Russell_Hall_A")]
+print(result)
+```
+
+**Output**
+
+```
+[['Russell_Hall_A'], ['Harrington_Turf', 'Russell_Hall_B', 'Russell_Hall_C', 'Russell_Hall_D', 'Russell_Hall_E'], ['Harrington_Lounge', 'Redding_Hall', 'Gilbert_Hall', 'Path_To_Turf'], ['Harrington_Hall_A', 'Harrington_Hall_B', 'Harrington_Hall_C', 'Harrington_Hall_D', 'Harrington_Hall_E', 'Lane_Hall', 'Thompson_Hall', 'Academy_Street'], ['Caesar_Rodney_Hall', 'Smyth_Hall', 'The_Green'], ['Cannon_Hall', 'New_Castle_Hall', 'Kent_Hall', 'Sussex_Hall', 'Squire_Hall']]
+```
+
+**Interpretation of Results**:
+The results show the dorms and areas that are immediately accessible from your current location. The first list represents the starting node, which is Russell_Hall_A in this case. The second list represents shows all the dorms and areas immediately accessible from Russell_Hall_A, which will be traveled to next. Then, the third list represents all the dorms and areas accessible from the second list. The same thing applies for the rest of the lists. This effectively gives us the levels of the tree with the dorms and areas as nodes, paths as edges, and Russell_Hall_A as the root node.
